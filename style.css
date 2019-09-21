@@ -46,12 +46,13 @@ header img {
 #container, #page {
     display: flex;
     flex-wrap: wrap;
+    align-items: end;
    }
 
 #page .product {
 max-width: 235px;
 text-align: center;
-border: 1px solid blue;
+border: 1px solid gray;
 margin: 0px 0px 15px 15px;
 padding: 15px;
 display: flex;
@@ -69,6 +70,17 @@ align-items: center;
 
 #sidebar {
     width: 25%;
+    border: 1px solid gray;
+    padding: 15px;
+
+}
+#sidebar ul li a {
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
 }
  #page .product button {
     background: greenyellow;
@@ -78,9 +90,22 @@ align-items: center;
     margin-top: 15px;
     border: none;
     cursor: pointer;
+    transition: 10ms;
  }
  #page .product button:hover {
      background:#8aad4c;
      color: white;
-     transition: 0.3s;
+     
+ }
+
+
+
+
+ @media(max-width:700px){
+    #sidebar, #page {width: 100%;
+    }
+    #page {
+        justify-content: center;
+        margin-top: 15px;
+    }
  }
