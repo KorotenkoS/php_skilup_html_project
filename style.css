@@ -46,7 +46,7 @@ header img {
 #container, #page {
     display: flex;
     flex-wrap: wrap;
-    align-items: end;
+    align-items: start;
    }
 
 #page .product {
@@ -98,7 +98,16 @@ align-items: center;
      
  }
 
-
+footer {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 15px 0;
+    font-size: 26px;
+    width: 100%;
+}
 
 
  @media(max-width:700px){
